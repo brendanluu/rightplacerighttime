@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'MicrogrammaDMedExt';
+	src: url('fonts/MicrogrammaD-MediExte.eot');
+	src: url('fonts/MicrogrammaD-MediExte.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MicrogrammaD-MediExte.woff') format('woff'),
+		url('fonts/MicrogrammaD-MediExte.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MicrogrammaDBolExt';
+	src: url('fonts/MicrogrammaD-BoldExte.eot');
+	src: url('fonts/MicrogrammaD-BoldExte.eot?#iefix') format('embedded-opentype'),
+		url('fonts/MicrogrammaD-BoldExte.woff') format('woff'),
+		url('fonts/MicrogrammaD-BoldExte.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/*MOBILE*/
+
+body {
+  font-family: 'MicrogrammaDBolExt';
+  background-color: #131313;
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+  color: white;
+  margin: 0;
+}
+
+#banana {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+
+}
+
+#gradient{
+  width: 100%;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #e53f49; /* Old browsers */
+  background: -moz-linear-gradient(left, #e53f49 0%, #ef5a99 49%, #f1a836 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #e53f49 0%,#ef5a99 49%,#f1a836 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #e53f49 0%,#ef5a99 49%,#f1a836 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e53f49', endColorstr='#f1a836',GradientType=1 ); /* IE6-9 */
+}
+
+#inspiration{
+
+ padding: .5vw;
+ font-size: 0;
+ display: -ms-flexbox;
+ -ms-flex-wrap: wrap;
+ -ms-flex-direction: column;
+ -webkit-flex-flow: row wrap;
+ flex-flow: row wrap;
+ display: -webkit-box;
+ display: flex;
+}
+#inspiration div {
+ -webkit-box-flex: auto;
+ -ms-flex: auto;
+ flex: auto;
+ width: 400px;
+ margin: .5vw;
+}
+#inspiration div img {
+ width: 100%;
+ height: auto;
+}
+@media screen and (max-width: 400px) {
+ header div { margin: 0; }
+ header { padding: 0; }
+
+}
+
+#sketches{
+
+ padding: .5vw;
+ font-size: 0;
+ display: -ms-flexbox;
+ -ms-flex-wrap: wrap;
+ -ms-flex-direction: column;
+ -webkit-flex-flow: row wrap;
+ flex-flow: row wrap;
+ display: -webkit-box;
+ display: flex;
+}
+#sketches div {
+ -webkit-box-flex: auto;
+ -ms-flex: auto;
+ flex: auto;
+ width: 400px;
+ margin: .5vw;
+}
+#sketches div img {
+ width: 100%;
+ height: auto;
+}
+@media screen and (max-width: 400px) {
+ header div { margin: 0; }
+ header { padding: 0; }
+
+}
+
+
+/*TABLET*/
+@media screen and (min-width: 768px){
+  body {
+    font-size: 20px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 10px auto;
+  }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px){
+
+  body {
+    font-size: 18px;
+    padding: 20px;
+    max-width: 940px;
+    margin: 10px auto;
+  }
+}
+
+/*DESKTOPLARGE*/
+@media screen and (min-width: 1280px){
+
+  header{
+    margin-right: 10px;
+  }
+
+  body {
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 1000px;
+    display: flex;
+  }
+
+  #content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
